@@ -77,7 +77,7 @@ English：[`README_EN.md`](./README_EN.md)
 >
 >1. 先 Fork 本仓库，并命名为 **NodeWarden**（默认自动填写）
 >2. 进入新仓库，进入 `Actions` 页面，点击 `I understand my workflows, go ahead and enable them`，点击 `Switch to KV mode`，点击`Run Workflow`
->3. 成功后**在你自己的仓库中**点击下面的按钮，在打开的页面中将项目名称改为 **NodeWarden2**，并将 **JWT_SECRET** 设置为 32 位随机字符串。
+>3. 成功后**在你自己的仓库中**点击下面的按钮，在打开的页面中将项目名称改为 **NodeWarden2**，并将 **JWT_SECRET** 设置为 32 位随机字符串。（不能选`创建专用 Git 存储库`）
 >
 >    [![Deploy (R2)](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/shuaiplus/NodeWarden)
 >
@@ -90,9 +90,8 @@ English：[`README_EN.md`](./README_EN.md)
 
 > [!TIP] 
 > 同步方法（更新仓库）：
->- 手动：打开你 Fork 的 GitHub 仓库，看到顶部同步提示后，点击 `Sync fork`。（不要点Contribute）
->- 自动：进入你的 Fork 仓库 -> `Actions`，点击 `I understand my workflows, go ahead and enable them`，启用后，`Sync upstream` 会在每天凌晨 3 点自动同步上游 `main`，并保留你当前的 [wrangler.toml](./wrangler.toml) 配置不被覆盖。
-
+>- 手动：打开你 Fork 的 GitHub 仓库，看到顶部同步提示后，点击 `Sync fork`，点击`Update branch`
+>- 自动：进入你的 Fork 仓库 -> `Actions`->`Sync upstream`->`Enable workflow`，会在每天凌晨 3 点自动同步上游。
 
 
 ### CLI 部署

@@ -74,12 +74,12 @@
 >- **KV**: no card required; **single attachment / Send file limit is 25 MiB** (Cloudflare limit, not editable); **1 GB free storage**
 >
 >1. Fork this repository and name it **NodeWarden**.
->2. Open your new repository, go to `Actions`, click `I understand my workflows, go ahead and enable them`, then run `Switch to KV mode`.
->3. After that, **in your own repository**, click the button below. On the page that opens, rename the project to **NodeWarden2** and set **JWT_SECRET** to a random 32-character string.
+>2. Open the new repository, go to `Actions`, click `I understand my workflows, go ahead and enable them`, then run `Switch to KV mode`.
+>3. After that, **in your own repository**, click the button below. On the page that opens, rename the project to **NodeWarden2** and set **JWT_SECRET** to a random 32-character string. Do not select `Create dedicated Git repository`.
 >
 >    [![Deploy](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/shuaiplus/NodeWarden)
 >
->4. On the same page, open the Worker settings and disconnect the `Git repository`.
+>4. On the same page, open Worker settings and disconnect the `Git repository`.
 >5. Go back to your forked repository (**NodeWarden**) on GitHub, open `Actions`, and run `Import KV ID from NodeWarden2`.
 >6. Return to Cloudflare, reconnect the `Git repository` to your forked repository (**NodeWarden**), and change the `Name` field at the bottom back to **NodeWarden**.
 >7. The GitHub repository **NodeWarden2** can then be deleted.
@@ -87,8 +87,8 @@
 
 > [!TIP] 
 > Sync upstream (keep your fork updated):
->- Manual: open your fork on GitHub and click `Sync fork` when prompted. Do not click `Contribute`.
->- Automatic: in your fork, go to `Actions`, click `I understand my workflows, go ahead and enable them`. Once enabled, `Sync upstream` will automatically sync the upstream `main` branch every day at 3 AM and keep your current [wrangler.toml](./wrangler.toml) configuration unchanged.
+>- Manual: open your fork on GitHub, click `Sync fork`, then click `Update branch`.
+>- Automatic: in your fork, go to `Actions` -> `Sync upstream` -> `Enable workflow`. It will automatically sync from upstream every day at 3 AM.
 
 ### CLI deploy 
 
